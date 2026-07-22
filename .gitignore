@@ -6,13 +6,7 @@ __pycache__/
 venv/
 .env
 
-# 数据集（体积过大，请按 Readme 自行下载/生成）
-data/ori_data/
-data/mixed_data/
-data/processed_data/
-data/plots/
-
-# 模型权重与 checkpoint
+# 模型权重与 checkpoint（体积大，不推送）
 *.keras
 *.h5
 *.hdf5
@@ -21,16 +15,6 @@ data/plots/
 *.ckpt
 *.pkl
 **/checkpoints/
-
-# 大型数组文件
-*.npy
-*.npz
-*.mat
-
-# 预处理图像（可由脚本重新生成）
-data/**/*.jpg
-data/**/*.jpeg
-data/**/*.png
 
 # IDE / OS
 .idea/
