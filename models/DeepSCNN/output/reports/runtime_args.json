@@ -1,0 +1,14 @@
+{
+  "dataset": "processed",
+  "run_name": "DeepSCNN-BrainAttention_v3_processed_v2",
+  "batch_size": 16,
+  "phase2_only": true,
+  "phase2_epochs": 30,
+  "phase2_lr": 0.00005,
+  "unfreeze_layers": 50,
+  "pretrained": true,
+  "pretrain_source": "ImageNet-ResNet50V2",
+  "num_classes": 4,
+  "use_tta": true,
+  "tta_passes": 8
+}

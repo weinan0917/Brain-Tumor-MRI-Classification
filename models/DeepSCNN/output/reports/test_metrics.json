@@ -1,0 +1,24 @@
+{
+  "split": "test",
+  "model": "DeepSCNN-BrainAttention_v3",
+  "dataset": "processed",
+  "checkpoint": "checkpoints/best_DeepSCNN-BrainAttention_v3.keras",
+  "classes": [
+    "glioma",
+    "meningioma",
+    "notumor",
+    "pituitary"
+  ],
+  "metrics": {
+    "accuracy": 0.9653379549393414,
+    "macro_precision": 0.9659207709149406,
+    "macro_recall": 0.9653379549393414,
+    "macro_f1": 0.9649188888536587,
+    "roc_auc": 0.9945970405514671,
+    "cohens_kappa": 0.9533900377825218,
+    "mcc": 0.9538109748922621
+  },
+  "model_params": 26110951,
+  "inference_latency_ms": 219.8517135221238,
+  "training_time_s": 12208.511503458023
+}

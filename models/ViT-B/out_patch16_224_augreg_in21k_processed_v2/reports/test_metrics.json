@@ -1,0 +1,76 @@
+{
+  "split": "test",
+  "checkpoint": "models/ViT-B/outputs/vit_base_patch16_224_augreg_in21k_processed_v2/checkpoints/best.pt",
+  "num_samples": 1763,
+  "classes": [
+    "glioma",
+    "meningioma",
+    "notumor",
+    "pituitary"
+  ],
+  "metrics": {
+    "accuracy": 0.9846851956891662,
+    "macro_f1": 0.9846389404882554,
+    "weighted_f1": 0.9846794306357625
+  },
+  "per_class": [
+    {
+      "class_idx": 0,
+      "precision": 0.9957894736842106,
+      "recall": 0.9752577319587629,
+      "f1": 0.9854166666666667,
+      "support": 485,
+      "class_name": "glioma"
+    },
+    {
+      "class_idx": 1,
+      "precision": 0.9861111111111112,
+      "recall": 0.9699453551912568,
+      "f1": 0.977961432506887,
+      "support": 366,
+      "class_name": "meningioma"
+    },
+    {
+      "class_idx": 2,
+      "precision": 0.9695817490494296,
+      "recall": 0.99609375,
+      "f1": 0.9826589595375722,
+      "support": 512,
+      "class_name": "notumor"
+    },
+    {
+      "class_idx": 3,
+      "precision": 0.9900497512437811,
+      "recall": 0.995,
+      "f1": 0.9925187032418954,
+      "support": 400,
+      "class_name": "pituitary"
+    }
+  ],
+  "confusion_matrix": [
+    [
+      473,
+      3,
+      9,
+      0
+    ],
+    [
+      2,
+      355,
+      6,
+      3
+    ],
+    [
+      0,
+      1,
+      510,
+      1
+    ],
+    [
+      0,
+      1,
+      1,
+      398
+    ]
+  ]
+}

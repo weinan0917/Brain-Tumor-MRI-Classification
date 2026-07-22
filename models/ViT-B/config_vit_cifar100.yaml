@@ -1,0 +1,36 @@
+data:
+  root: data/cifar-100-python-train450-val50
+  num_classes: 100
+  batch_size: 32
+  eval_batch_size: 32
+  num_workers: 2
+  pin_memory: true
+  persistent_workers: false
+
+model:
+  model_name: vit_base_patch16_224.augreg_in21k
+  pretrained: true
+  img_size: 224
+  drop_rate: 0.1
+  drop_path_rate: 0.1
+
+train:
+  output_root: models/ViT-B/outputs
+  run_name: vit_base_patch16_224_augreg_in21k_cifar100
+  epochs: 30
+  lr: 0.0001
+  weight_decay: 0.05
+  warmup_epochs: 5
+  min_lr: 0.000001
+  label_smoothing: 0.1
+  amp: true
+  seed: 42
+  eval_test: true
+
+augment:
+  train_scale: [0.08, 1.0]
+  horizontal_flip_probability: 0.5
+  vertical_flip_probability: 0.0
+  random_erasing_probability: 0.25
+  color_jitter: 0.4
+  crop_pct: 0.9

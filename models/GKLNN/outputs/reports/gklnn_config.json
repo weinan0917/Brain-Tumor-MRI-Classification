@@ -1,0 +1,13 @@
+{
+  "pca_dim": 160,
+  "raw_dim": 406,
+  "dual_reservoir": [
+    42,
+    137,
+    271
+  ],
+  "mixup_alpha": 0.2,
+  "cutmix_alpha": 0.15,
+  "sigma": 0.9716609468702504,
+  "n_prototypes": 2400
+}

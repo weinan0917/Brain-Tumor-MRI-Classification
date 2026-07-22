@@ -1,0 +1,28 @@
+data:
+  dataset: processed
+  batch_size: 16
+  num_classes: 4
+  classes:
+    - glioma
+    - meningioma
+    - notumor
+    - pituitary
+model:
+  architecture: DeepSCNN-BrainAttention_v3
+  backbone: ResNet50V2
+  pretrained: ImageNet
+  feature_dim: 256
+  attention: SE_and_spatial_attention
+train:
+  run_name: DeepSCNN-BrainAttention_v3_processed_v2
+  mode: phase2_only
+  phase2_epochs: 30
+  phase2_lr: 5.0e-05
+  unfreeze_last_n: 50
+  optimizer: Adam
+  loss: categorical_crossentropy
+  label_smoothing: 0.05
+  checkpoint_monitor: val_accuracy
+evaluation:
+  use_tta: true
+  tta_passes: 8

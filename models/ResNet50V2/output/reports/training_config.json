@@ -1,0 +1,9 @@
+{
+  "phase1_epochs": 12,
+  "phase2_epochs": 20,
+  "phase1_lr": 0.001,
+  "phase2_lr": 0.0001,
+  "unfreeze_last_n": 40,
+  "phase1_time_s": 1734.2845711708069,
+  "phase2_time_s": 3822.8650975227356
+}

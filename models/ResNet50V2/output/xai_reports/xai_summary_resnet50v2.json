@@ -1,0 +1,190 @@
+{
+  "model": "models/ResNet50V2/outputs/processed/checkpoints/best_ResNet50V2_v2.keras",
+  "test_size": 1731,
+  "class_counts": {
+    "glioma": 476,
+    "meningioma": 357,
+    "notumor": 506,
+    "pituitary": 392
+  },
+  "last_conv_layer": "conv5_block3_3_conv",
+  "tta_passes": 5,
+  "accuracy_and_ci": {
+    "accuracy": 0.9693818601964183,
+    "ci_95_lower": 0.9607163489312536,
+    "ci_95_upper": 0.976891969959561,
+    "bootstrap_rounds": 2000
+  },
+  "misclassified": 53,
+  "mean_confidence": 0.9547199606895447,
+  "mean_predictive_entropy": 0.2305137813091278,
+  "mean_entropy_correct": 0.2195170521736145,
+  "mean_entropy_error": 0.5786743760108948,
+  "mean_mc_probability_std": 0.014389942400157452,
+  "confusion_matrix": [
+    [
+      457,
+      10,
+      9,
+      0
+    ],
+    [
+      8,
+      334,
+      11,
+      4
+    ],
+    [
+      2,
+      0,
+      504,
+      0
+    ],
+    [
+      3,
+      2,
+      4,
+      383
+    ]
+  ],
+  "xai_samples": [
+    {
+      "index": 122,
+      "true_class": "glioma",
+      "pred_class": "glioma",
+      "confidence": 0.9917533993721008,
+      "figure": "outputs\\ResNet50V2_XAI\\xai_plots\\xai_correct_glioma_idx_122.png"
+    },
+    {
+      "index": 1178,
+      "true_class": "meningioma",
+      "pred_class": "meningioma",
+      "confidence": 0.9948803186416626,
+      "figure": "outputs\\ResNet50V2_XAI\\xai_plots\\xai_correct_meningioma_idx_1178.png"
+    },
+    {
+      "index": 1249,
+      "true_class": "notumor",
+      "pred_class": "notumor",
+      "confidence": 0.9959350824356079,
+      "figure": "outputs\\ResNet50V2_XAI\\xai_plots\\xai_correct_notumor_idx_1249.png"
+    },
+    {
+      "index": 320,
+      "true_class": "pituitary",
+      "pred_class": "pituitary",
+      "confidence": 0.9921588897705078,
+      "figure": "outputs\\ResNet50V2_XAI\\xai_plots\\xai_correct_pituitary_idx_320.png"
+    },
+    {
+      "index": 1006,
+      "true_class": "pituitary",
+      "pred_class": "notumor",
+      "confidence": 0.995330810546875,
+      "figure": "outputs\\ResNet50V2_XAI\\xai_plots\\xai_error_rank_1_idx_1006.png"
+    },
+    {
+      "index": 568,
+      "true_class": "meningioma",
+      "pred_class": "glioma",
+      "confidence": 0.9797007441520691,
+      "figure": "outputs\\ResNet50V2_XAI\\xai_plots\\xai_error_rank_2_idx_568.png"
+    },
+    {
+      "index": 273,
+      "true_class": "meningioma",
+      "pred_class": "notumor",
+      "confidence": 0.9770532846450806,
+      "figure": "outputs\\ResNet50V2_XAI\\xai_plots\\xai_error_rank_3_idx_273.png"
+    },
+    {
+      "index": 1207,
+      "true_class": "glioma",
+      "pred_class": "notumor",
+      "confidence": 0.9703208208084106,
+      "figure": "outputs\\ResNet50V2_XAI\\xai_plots\\xai_error_rank_4_idx_1207.png"
+    }
+  ],
+  "high_confidence_errors": [
+    {
+      "index": 1006,
+      "true_class": "pituitary",
+      "pred_class": "notumor",
+      "confidence": 0.995330810546875,
+      "top2_margin": 0.9931023716926575,
+      "predictive_entropy": 0.03500661998987198
+    },
+    {
+      "index": 568,
+      "true_class": "meningioma",
+      "pred_class": "glioma",
+      "confidence": 0.9797007441520691,
+      "top2_margin": 0.9712421298027039,
+      "predictive_entropy": 0.19389265775680542
+    },
+    {
+      "index": 273,
+      "true_class": "meningioma",
+      "pred_class": "notumor",
+      "confidence": 0.9770532846450806,
+      "top2_margin": 0.968433141708374,
+      "predictive_entropy": 0.19508133828639984
+    },
+    {
+      "index": 1207,
+      "true_class": "glioma",
+      "pred_class": "notumor",
+      "confidence": 0.9703208208084106,
+      "top2_margin": 0.9584512710571289,
+      "predictive_entropy": 0.2485489696264267
+    },
+    {
+      "index": 344,
+      "true_class": "glioma",
+      "pred_class": "notumor",
+      "confidence": 0.9702029228210449,
+      "top2_margin": 0.9530335664749146,
+      "predictive_entropy": 0.19018253684043884
+    },
+    {
+      "index": 1199,
+      "true_class": "meningioma",
+      "pred_class": "glioma",
+      "confidence": 0.9698642492294312,
+      "top2_margin": 0.9532384276390076,
+      "predictive_entropy": 0.2235952913761139
+    },
+    {
+      "index": 195,
+      "true_class": "meningioma",
+      "pred_class": "notumor",
+      "confidence": 0.9693172574043274,
+      "top2_margin": 0.9578285813331604,
+      "predictive_entropy": 0.20488034188747406
+    },
+    {
+      "index": 280,
+      "true_class": "meningioma",
+      "pred_class": "notumor",
+      "confidence": 0.9686542749404907,
+      "top2_margin": 0.9553165435791016,
+      "predictive_entropy": 0.1680569052696228
+    },
+    {
+      "index": 831,
+      "true_class": "pituitary",
+      "pred_class": "notumor",
+      "confidence": 0.9671128392219543,
+      "top2_margin": 0.9545581340789795,
+      "predictive_entropy": 0.15822003781795502
+    },
+    {
+      "index": 452,
+      "true_class": "glioma",
+      "pred_class": "notumor",
+      "confidence": 0.9647027850151062,
+      "top2_margin": 0.9428344368934631,
+      "predictive_entropy": 0.26370227336883545
+    }
+  ]
+}

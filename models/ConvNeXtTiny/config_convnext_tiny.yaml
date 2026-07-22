@@ -1,0 +1,38 @@
+data:
+  root: data/processed_data
+  num_classes: 4
+  batch_size: 16
+  eval_batch_size: 32
+  num_workers: 2
+  pin_memory: true
+  persistent_workers: false
+
+model:
+  name: convnext_tiny
+  pretrained: false
+  local_pretrained: true
+  pretrained_path: models/ConvNeXtTiny/weights/convnext_tiny_22k_224.pth
+  img_size: 224
+  drop_rate: 0.0
+  drop_path_rate: 0.1
+
+train:
+  output_root: models/ConvNeXtTiny/outputs
+  run_name: convnext_tiny_imagenet1k_processed
+  epochs: 30
+  lr: 0.0001
+  weight_decay: 0.05
+  warmup_epochs: 3
+  min_lr: 0.000001
+  label_smoothing: 0.1
+  amp: true
+  seed: 42
+  eval_test: false
+
+augment:
+  train_scale: [0.8, 1.0]
+  horizontal_flip_probability: 0.5
+  vertical_flip_probability: 0.0
+  random_erasing_probability: 0.0
+  color_jitter: 0.0
+  crop_pct: 0.875
